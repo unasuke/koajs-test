@@ -1,0 +1,22 @@
+{
+  "name": "koajs-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/unasuke/koajs-test.git"
+  },
+  "author": "Yusuke Nakamura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unasuke/koajs-test/issues"
+  },
+  "homepage": "https://github.com/unasuke/koajs-test#readme",
+  "dependencies": {
+    "koa": "^1.2.0"
+  }
+}
