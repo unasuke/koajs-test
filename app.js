@@ -1,7 +1,7 @@
 var views = require('co-views');
 var koa = require('koa');
 var app = koa();
-var render = views(__dirname + '/views', { ext: 'ejs' });
+var render = views(__dirname + '/views', { ext: 'jade' });
 
 var user = {
   name: {
