@@ -1,5 +1,15 @@
+var views = require('co-views');
 var koa = require('koa');
 var app = koa();
+var render = views(__dirname + '/views', { ext: 'ejs' });
+
+var user = {
+  name: {
+    first: 'Yusuke',
+    last: 'Nakamura',
+  },
+  age: 22
+};
 
 app.use(function *(next){
   var start = new Date;
@@ -16,7 +26,7 @@ app.use(function *(next){
 })
 
 app.use(function *(){
-  this.body = 'Hello World';
+  this.body = yield render('user', { user: user });
 });
 
 app.listen(8000);
